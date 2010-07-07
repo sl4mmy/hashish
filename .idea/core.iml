@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/.idea/out/classes/main/core" />
+    <output-test url="file://$MODULE_DIR$/.idea/out/classes/test/core" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/core">
+      <sourceFolder url="file://$MODULE_DIR$/core/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/core/test/unit/java" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/core/target" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="JUnit" level="project" />
+    <orderEntry type="library" name="Mockito" level="project" />
+    <orderEntry type="inheritedJdk" />
+  </component>
+</module>
+

@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright (c) 2010, Kent R. Spillner <kspillner@acm.org>
+  ~
+  ~ Permission to use, copy, modify, and distribute this software for any
+  ~ purpose with or without fee is hereby granted, provided that the above
+  ~ copyright notice and this permission notice appear in all copies.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+  ~ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+  ~ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+  ~ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+  ~ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+  ~ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+  ~ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+  -->
+
+<!DOCTYPE module PUBLIC
+    "-//Puppy Crawl//DTD Check Configuration 1.2//EN"
+    "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
+
+<module name="Checker">
+        <module name="SuppressionCommentFilter" />
+        <module name="SuppressionFilter">
+                <property name="file" value="checkstyle-suppressions.xml" />
+        </module>
+
+        <module name="NewlineAtEndOfFile">
+                <property name="lineSeparator" value="lf" />
+        </module>
+
+        <module name="Translation" />
+
+        <module name="RegexpHeader">
+                <property name="header"
+                    value="^/*\n * Copyright \(c\) (\d\d\d\d, )+Kent R. Spillner &lt;kspillner@acm.org&gt;\n *\n * Permission to use, copy, modify, and distribute this software for any\n * purpose with or without fee is hereby granted, provided that the above\n * copyright notice and this permission notice appear in all copies\n *\n * THE SOFTWARE IS PROVIDED &quot;AS IS&quot; AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\n */$" />
+                <property name="multiLines" value="3" />
+        </module>
+
+        <module name="FileLength" />
+
+        <module name="TreeWalker">
+                <property name="cacheFile" value="${checkstyle.cache.file}" />
+                <property name="tabWidth" value="8" />
+
+                <module name="FileContentsHolder" />
+
+                <module name="JavadocType" />
+                <module name="JavadocStyle" />
+
+                <module name="ConstantName" />
+                <module name="LocalFinalVariableName" />
+                <module name="LocalVariableName" />
+                <module name="MemberName" />
+                <module name="MethodName" />
+                <module name="PackageName" />
+                <module name="ParameterName" />
+                <module name="StaticVariableName" />
+                <module name="TypeName" />
+
+                <module name="AvoidStarImport" />
+                <module name="IllegalImport" />
+                <module name="RedundantImport" />
+                <module name="UnusedImports" />
+
+                <module name="LineLength">
+                        <property name="max" value="80" />
+                </module>
+                <module name="MethodLength">
+                        <property name="max" value="10" />
+                </module>
+                <module name="ParameterNumber" />
+
+                <module name="EmptyForIteratorPad" />
+                <module name="MethodParamPad" />
+                <module name="NoWhitespaceAfter" />
+                <module name="NoWhitespaceBefore" />
+                <module name="OperatorWrap" />
+                <module name="ParenPad" />
+                <module name="TypecastParenPad" />
+                <module name="WhitespaceAfter" />
+                <module name="WhitespaceAround">
+                        <property name="allowEmptyConstructors" value="true" />
+                </module>
+
+                <module name="ModifierOrder" />
+                <module name="RedundantModifier" />
+
+                <module name="AvoidNestedBlocks" />
+                <module name="EmptyBlock" />
+                <module name="LeftCurly" />
+                <module name="NeedBraces" />
+                <module name="RightCurly" />
+
+                <module name="DoubleCheckedLocking" />
+                <module name="EmptyStatement" />
+                <module name="EqualsHashCode" />
+                <module name="HiddenField">
+                        <property name="ignoreConstructorParameter" value="true" />
+                        <property name="ignoreSetter" value="true" />
+                </module>
+                <module name="IllegalInstantiation" />
+                <module name="InnerAssignment" />
+                <module name="MagicNumber" />
+                <module name="MissingSwitchDefault" />
+                <module name="RedundantThrows" />
+                <module name="SimplifyBooleanExpression" />
+                <module name="SimplifyBooleanReturn" />
+
+                <module name="FinalClass" />
+                <module name="HideUtilityClassConstructor" />
+                <module name="InterfaceIsType" />
+
+                <module name="ArrayTypeStyle" />
+                <module name="FinalParameters" />
+                <module name="RegexpSinglelineJava">
+                        <property name="format" value="\s+$" />
+                        <property name="message" value="Illegal whitespace at end of line." />
+                </module>
+                <module name="TodoComment" />
+                <module name="UpperEll" />
+        </module>
+</module>
